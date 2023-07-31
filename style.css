@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /*
+    background-image: url(assets/assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    */
+    background: var(--bg-url)  top center / cover;
+    height: 100vh; /* 100% viewport height*/
+    font-family: 'Inter', sans-serif;
+}
+
+/*--------------------------------------------------------*/
+
+.light-mode {
+    --text-color: rgb(9, 8, 8);
+    --bg-url: url(background33.jpg);
+
+}
+
+
+
+/*---------------------------------------------------------*/
+
+#container {
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    margin: 56px auto 0px;  /* 3 configurações: em cima, lateral, embaixo. */
+    align-items: center;
+    
+}
+
+/* -----------------------------------------------------*/
+
+.profile img {
+
+    /*
+    display: block;
+    margin: auto;
+    */
+    border-radius: 20px;
+    height: 112px;
+    width: 112px;  
+    border: 2px solid rgb(226, 101, 28);
+    box-shadow: 0px 0px 10px 1px rgba(1, 7, 11, 0.663);
+}
+
+.profile {
+    text-align: center;
+    /* elementos inline ou block, reagem de maneiras diferente
+    aos meios de centralizá-los
+    */    
+    padding: 24px;
+}
+
+.profile p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+}
+
+/*------------------------------------------------------------*/
+.links {
+    padding: 24px;
+    
+}
+
+ul {
+    list-style: none;
+    gap: 16px;   /* espaços entre os elementos*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: brown;
+    /*caixa transparente*/
+    border: 1px solid rgb(197, 157, 104);
+    background: rgba(251, 113, 0, 0.226);
+
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(4px); /* no caniuse.com conseguimos verificar se precisa do -webkit- ou não.*/
+    /*-------------------*/
+    border-radius: 8px;
+    padding: 16px 24px;  
+    justify-content: center; /*centro da page*/
+    align-items: center; /*meio da page*/
+    align-self: stretch; 
+    display: flex; 
+
+    transition: background 0.5s ;  /*-------------------------*/
+    
+    box-shadow: 2px 2px 10px 1px rgb(3, 0, 14);
+}
+
+ul li a:hover {
+border: 1.5px solid var(--text-color);
+background: brown;
+color: wheat;
+}
+
+.versiculo {
+    font-style: italic;
+    margin: auto;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(2, 1, 1);
+    padding: 24px 0; 
+    max-width: 250px;
+}
+
+#vers {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    color: brown;
+    padding: 15px 0;  
+}
+
+footer a {
+    color: brown
+}
